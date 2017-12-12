@@ -1,4 +1,4 @@
-package com.lxj.netty.server;
+package com.lxj.netty.study.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
