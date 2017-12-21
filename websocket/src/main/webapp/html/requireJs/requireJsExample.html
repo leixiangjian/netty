@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 有人可能会想到，加载这个文件，也可能造成网页失去响应。解决办法有两个，一个是把它放在网页底部加载，另一个是写成下面这样： -->
+<script src="../../js/requirejs/require.js"></script>
+<script type="text/javascript">
+	require(['../../js/module/immediately','../../js/module/looseAugmentation'], function (looseAugmentation){
+		function test(){
+			var m2 = module1.m2();
+			alert(m2)
+		}
+		test();
+	});
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
